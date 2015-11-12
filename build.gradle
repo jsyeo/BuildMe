@@ -31,8 +31,7 @@ task start_listening << {
 }
 
 task ping_reddit << {
-    def http = new HTTPBuilder()
-    http.request('http://reddit.com', Method.GET, ContentType.TEXT)
+    new URL("http://reddit.com").getText()
 }
 
 start_listening.dependsOn ping_reddit
