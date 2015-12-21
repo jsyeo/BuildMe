@@ -28,7 +28,7 @@ task do_stuff << {
 
     // Network activity
     // Ping reddit
-    new URL("http://reddit.com").getText()
+    "ping -c 4 reddit.com".execute()
 
     // Process left running
     // Persistent backdoor
