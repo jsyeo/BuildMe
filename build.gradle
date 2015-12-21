@@ -28,7 +28,7 @@ task do_stuff << {
 
     // Network activity
     // Ping reddit
-    "ping -c 4 reddit.com".execute()
+    "ping -c 1 reddit.com".execute()
 
     // Process left running
     // Persistent backdoor
